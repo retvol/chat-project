@@ -1,22 +1,22 @@
 import React, { Component } from "react";
-import Scroll from "./components/Scroll";
-import Main from "./components/general/Main";
-import MainSupport from "./components/support/MainSupport";
-import Profile from "./components/Profile";
+import Scroll from "./components/scroll/Scroll";
+import Main from "./components/channels/general/Main";
+import MainSupport from "./components/channels/support/MainSupport";
+import Profile from "./components/profile/Profile";
 import { connect } from "react-redux";
 import { setBooks } from "./actions/setBooks";
 import { Route, Switch } from "react-router-dom";
 import axios from "axios";
 import "./App.css";
-import MainMarketing from "./components/marketing/MainMarketing";
-import MainAustrelia from "./components/austrelia/MainAustrelia";
-import MainThailand from "./components/thailand/MainThailand";
-import MainBali from "./components/bali/MainBali";
-import MainPoland from "./components/poland/MainPoland";
-import MainJobs from "./components/jobs/MainJobs";
-import MainStartups from "./components/startups/MainStartups";
-import MainItaly from "./components/italy/MainItaly";
-import MainFreelance from "./components/freelance/MainFreelance";
+import MainMarketing from "./components/channels/marketing/MainMarketing";
+import MainAustrelia from "./components/channels/austrelia/MainAustrelia";
+import MainThailand from "./components/channels/thailand/MainThailand";
+import MainBali from "./components/channels/bali/MainBali";
+import MainPoland from "./components/channels/poland/MainPoland";
+import MainJobs from "./components/channels/jobs/MainJobs";
+import MainStartups from "./components/channels/startups/MainStartups";
+import MainItaly from "./components/channels/italy/MainItaly";
+import MainFreelance from "./components/channels/freelance/MainFreelance";
 class App extends Component {
   componentDidMount() {
     const { setBooks } = this.props;

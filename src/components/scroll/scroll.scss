@@ -1,0 +1,148 @@
+.Scroll {
+  width: 280px;
+  background: linear-gradient(to top, #212223, #535354);
+
+  .Scroll-List {
+    margin-right: 25px;
+    margin-left: 27px;
+
+    .Novad-list {
+      margin-top: 31.5px;
+      display: flex;
+      height: 24px;
+      font-size: 20px;
+      color: white;
+      margin-bottom: 0;
+
+      p {
+        margin-top: 0;
+        height: 24px;
+      }
+
+      .Novad-list-button {
+        margin-left: 5px;
+        width: 20px;
+        height: 20px;
+        margin-top: 6px;
+        background: transparent;
+        outline: none;
+        border: none;
+        padding: 0;
+
+        img {
+          margin-top: 1px;
+        }
+      }
+      .Setting {
+        margin-top: 8px;
+        margin-left: auto;
+        width: 17px;
+        height: 17px;
+        background: transparent;
+        outline: none;
+        border: none;
+        padding: 0;
+      }
+    }
+
+    .Treds {
+      display: flex;
+      margin-top: 30.5px;
+
+      button {
+        height: 17px;
+        width: 18px;
+        background: transparent;
+        outline: none;
+        border: none;
+        padding: 0;
+        color: #b5b5b5;
+        font-size: 14;
+        margin-top: 2px;
+        margin-right: 12px;
+      }
+
+      p {
+        color: #b5b5b5;
+        font-size: 13px;
+        margin: 0;
+      }
+    }
+
+    .Chaneles-number {
+      display: flex;
+      margin-top: 30.5px;
+      text-transform: uppercase;
+      color: #919191;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: bold;
+      justify-content: space-between;
+
+      p {
+        margin: 0;
+      }
+    }
+    .Channels {
+      margin-top: 14px;
+
+      a {
+        text-decoration: none;
+        text-transform: none;
+        color: #b5b5b5;
+      }
+      .Channels-href {
+        width: 228px;
+        height: 30px;
+        background: transparent;
+
+        p {
+          margin-left: 14px;
+          margin-bottom: 0;
+          margin-top: 0;
+          height: 20px;
+        }
+      }
+    }
+    .Friends {
+      display: flex;
+      margin-top: 5px;
+      text-transform: uppercase;
+      color: #919191;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: bold;
+      justify-content: space-between;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    .Friends-list {
+      margin-top: 20px;
+
+      .Friends-list-items {
+        display: flex;
+        margin-bottom: 12px;
+        height: 32px;
+        text-align: center;
+
+        p {
+          margin-top: 5px;
+          margin-bottom: 0;
+          margin-left: 14px;
+          color: #b5b5b5;
+          font-size: 14px;
+        }
+
+        .Friends-Photo {
+          height: 32px;
+          width: 35px;
+          margin-left: 7.5px;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
