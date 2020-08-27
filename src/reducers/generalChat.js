@@ -1,8 +1,8 @@
 const TASKS = [{ id: 1, text: "ddddd", isCompleted: false }];
 
-const task = (state = TASKS, { id, text, isCompleted, type }) => {
+const generalChat = (state = TASKS, { id, text, isCompleted, type }) => {
   switch (type) {
-    case "ADD_TASK":
+    case "ADD_GENERAL_CHAT":
       return [
         ...state,
         {
@@ -16,4 +16,4 @@ const task = (state = TASKS, { id, text, isCompleted, type }) => {
       return state;
   }
 };
-export default task;
+export default generalChat;

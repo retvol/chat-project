@@ -4,7 +4,7 @@ import Header from "../../Header/Header";
 import Chat from "./Chat";
 import FooterGeneral from "./FooterGeneral";
 import { connect } from "react-redux";
-import { addTask } from "../../../actions/actionCreate";
+import { addGeneralChat } from "../../../actions/actionCreate";
 
 class Main extends Component {
   state = {
@@ -25,8 +25,8 @@ class Main extends Component {
   adddTask = () => {
     const { taskText } = this.state;
 
-    const { addTask } = this.props;
-    addTask(new Date().getTime(), taskText, false);
+    const { addGeneralChat } = this.props;
+    addGeneralChat(new Date().getTime(), taskText, false);
     this.setState({
       taskText: "",
     });
@@ -35,22 +35,22 @@ class Main extends Component {
   enterTask = ({ key }) => {
     const { taskText } = this.state;
     if (taskText.length > 3 && key === "Enter") {
-      const { addTask } = this.props;
-      addTask(new Date().getTime(), taskText, false);
+      const { addGeneralChat } = this.props;
+      addGeneralChat(new Date().getTime(), taskText, false);
       this.setState({
         taskText: "",
       });
     }
   };
   render() {
-    const { task } = this.props;
+    const { generalChat } = this.props;
     const { taskText } = this.state;
 
     return (
       <div className="Main">
         <Header />
 
-        <Chat value={taskText} task={task} />
+        <Chat value={taskText} task={generalChat} />
         <FooterGeneral
           onKeyPress={this.enterTask}
           OnChange={this.inputOnChange}
@@ -61,10 +61,10 @@ class Main extends Component {
   }
 }
 
-const mapStateToProps = ({ task }) => ({
-  task,
+const mapStateToProps = ({ generalChat }) => ({
+  generalChat,
 });
 const mapDispatchToProps = {
-  addTask,
+  addGeneralChat,
 };
 export default connect(mapStateToProps, mapDispatchToProps)(Main);

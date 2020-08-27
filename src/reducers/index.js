@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
-import task from "./task";
+import generalChat from "./generalChat";
 import profile from "./profile";
-import supTasks from "./supTasks";
+import SupportChat from "./SupportChat";
 import austreliaChat from "./austreliaChat";
 import italyChat from "./italyChat";
 import jobsChat from "./jobsChat";
@@ -12,9 +12,9 @@ import thailandChat from "./thailandChat";
 import freelanceChat from "./freelanceChat";
 import marketingChat from "./marketingChat";
 const rootReducer = combineReducers({
-  task,
+  generalChat,
   profile,
-  supTasks,
+  SupportChat,
   marketingChat,
   austreliaChat,
   italyChat,

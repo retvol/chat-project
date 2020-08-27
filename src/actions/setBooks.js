@@ -1,4 +1,4 @@
-export const setBooks = (books) => ({
+export const setFriends = (books) => ({
   type: "SET_BOOKS",
   payload: books,
 });

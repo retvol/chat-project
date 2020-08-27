@@ -4,7 +4,7 @@ import Header from "../../Header/Header";
 import Chat from "./Chat";
 import FooterSupport from "./FooterSupport";
 import { connect } from "react-redux";
-import { supTask } from "../../../actions/actionCreate";
+import { addSupportChat } from "../../../actions/actionCreate";
 
 class Main extends Component {
   state = {
@@ -25,8 +25,8 @@ class Main extends Component {
   adddTask = () => {
     const { taskText } = this.state;
 
-    const { supTask } = this.props;
-    supTask(new Date().getTime(), taskText, false);
+    const { addSupportChat } = this.props;
+    addSupportChat(new Date().getTime(), taskText, false);
     this.setState({
       taskText: "",
     });
@@ -35,22 +35,22 @@ class Main extends Component {
   enterTask = ({ key }) => {
     const { taskText } = this.state;
     if (taskText.length > 3 && key === "Enter") {
-      const { supTask } = this.props;
-      supTask(new Date().getTime(), taskText, false);
+      const { addSupportChat } = this.props;
+      addSupportChat(new Date().getTime(), taskText, false);
       this.setState({
         taskText: "",
       });
     }
   };
   render() {
-    const { supTasks } = this.props;
+    const { SupportChat } = this.props;
     const { taskText } = this.state;
 
     return (
       <div className="Main">
         <Header />
 
-        <Chat value={taskText} supTasks={supTasks} />
+        <Chat value={taskText} supTasks={SupportChat} />
         <FooterSupport
           onKeyPress={this.enterTask}
           OnChange={this.inputOnChange}
@@ -61,10 +61,10 @@ class Main extends Component {
   }
 }
 
-const mapStateToProps = ({ supTasks }) => ({
-  supTasks,
+const mapStateToProps = ({ SupportChat }) => ({
+  SupportChat,
 });
 const mapDispatchToProps = {
-  supTask,
+  addSupportChat,
 };
 export default connect(mapStateToProps, mapDispatchToProps)(Main);

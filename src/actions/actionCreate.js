@@ -1,11 +1,11 @@
-export const addTask = (id, text, isCompleted) => ({
-  type: "ADD_TASK",
+export const addGeneralChat = (id, text, isCompleted) => ({
+  type: "ADD_GENERAL_CHAT",
   id,
   text,
   isCompleted,
 });
-export const supTask = (id, text, isCompleted) => ({
-  type: "SUP_TASK",
+export const addSupportChat = (id, text, isCompleted) => ({
+  type: "ADD_SUPPORT_CHAT",
   id,
   text,
   isCompleted,

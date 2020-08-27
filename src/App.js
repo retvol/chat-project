@@ -4,7 +4,7 @@ import Main from "./components/channels/general/Main";
 import MainSupport from "./components/channels/support/MainSupport";
 import Profile from "./components/profile/Profile";
 import { connect } from "react-redux";
-import { setBooks } from "./actions/setBooks";
+import { setFriends } from "./actions/setBooks";
 import { Route, Switch } from "react-router-dom";
 import axios from "axios";
 import "./App.css";
@@ -19,10 +19,10 @@ import MainItaly from "./components/channels/italy/MainItaly";
 import MainFreelance from "./components/channels/freelance/MainFreelance";
 class App extends Component {
   componentDidMount() {
-    const { setBooks } = this.props;
-    axios.get("books.json").then(({ data }) => {
-      setBooks(data);
-      console.log(setBooks(data));
+    const { setFriends } = this.props;
+    axios.get("friends.json").then(({ data }) => {
+      setFriends(data);
+      console.log(setFriends(data));
     });
   }
 
@@ -65,7 +65,7 @@ const mapStateToProps = ({ profile, isReady }) => ({
   isReady: profile.isReady,
 });
 const mapDispatchToProps = {
-  setBooks,
+  setFriends,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);

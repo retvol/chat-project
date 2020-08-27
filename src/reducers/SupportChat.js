@@ -1,8 +1,8 @@
 const TASKS = [{ id: 1, text: "aaaaa", isCompleted: false }];
 
-const SupTasks = (state = TASKS, { id, text, isCompleted, type }) => {
+const SupportChat = (state = TASKS, { id, text, isCompleted, type }) => {
   switch (type) {
-    case "SUP_TASK":
+    case "ADD_SUPPORT_CHAT":
       return [
         ...state,
         {
@@ -16,4 +16,4 @@ const SupTasks = (state = TASKS, { id, text, isCompleted, type }) => {
       return state;
   }
 };
-export default SupTasks;
+export default SupportChat;
