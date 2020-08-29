@@ -1,14 +1,14 @@
-.Profile {
+.profile {
   width: 201px;
   background: #cfd2d7;
   mix-blend-mode: normal;
 
-  .Avatar {
+  .avatar {
     height: 200px;
     width: 200px;
   }
 
-  .Profile-list {
+  .profile-list {
     display: flex;
     height: 20px;
     margin: 14px 0 0 20px;
@@ -22,13 +22,13 @@
     }
   }
 
-  .Proff {
+  .proff {
     margin: 3.5px 0 0 20px;
     color: #5f6164;
     font-size: 12px;
   }
 
-  .Social-networks {
+  .social-networks {
     margin-left: 20px;
     margin-top: 20px;
     display: flex;
@@ -50,26 +50,26 @@
       background-repeat: no-repeat;
     }
 
-    .Facebook {
+    .facebook {
       margin-left: 8px;
     }
 
-    .Twitter {
+    .twitter {
       margin-left: 4px;
       margin-bottom: 1px;
     }
 
-    .Instagram {
+    .instagram {
       margin-left: 5px;
     }
 
-    .Link {
+    .link {
       margin-left: 6px;
       margin-bottom: 1px;
     }
   }
 
-  .Profile-button {
+  .profile-button {
     margin-left: 20px;
     display: flex;
     margin-top: 18.5px;
@@ -95,11 +95,11 @@
     }
   }
 
-  .Arrow {
+  .arrow {
     margin-bottom: 2px;
   }
 
-  .Profil-info {
+  .profil-info {
     margin-left: 20px;
     p {
       margin-top: 10px;
@@ -117,7 +117,7 @@
     }
   }
 
-  .Profile-arrow {
+  .profile-arrow {
     margin-top: 230px;
     margin-left: 160px;
     button {

@@ -1,29 +1,29 @@
 import React, { Component } from "react";
 import "./header.scss";
-import Star from "../../Picters/star.svg";
-import Kol from "../../Picters/kol.svg";
-import Icon from "../../Picters/icon.svg";
-import Shape from "../../Picters/shape.svg";
-import People from "../../Picters/people.svg";
+import Star from "../../pictures/star.svg";
+import Kol from "../../pictures/kol.svg";
+import Icon from "../../pictures/icon.svg";
+import Shape from "../../pictures/shape.svg";
+import People from "../../pictures/people.svg";
 class Header extends Component {
   render() {
     return (
-      <div className="Navbar">
-        <div className="Navbar-left">
-          <h4 className="Channel">#general</h4>
+      <div className="navbar">
+        <div className="navbar-left">
+          <h4 className="channel">#general</h4>
           <img src={Star} alt="Logo" className="star" />
         </div>
-        <div className="Navbar-right">
-          <img src={People} alt="Logo" className="People" />
-          <h6 className="Number">7777</h6>
+        <div className="navbar-right">
+          <img src={People} alt="Logo" className="people" />
+          <h6 className="number">7777</h6>
           <input
             type="text"
-            className="Navbar-right-input"
+            className="navbar-right-input"
             placeholder="search..."
           />
-          <img src={Kol} alt="Logo" className="Kol" />
-          <img src={Shape} alt="Logo" className="Shape" />
-          <img src={Icon} alt="Logo" className="Icon" />
+          <img src={Kol} alt="Logo" className="kol" />
+          <img src={Shape} alt="Logo" className="shape" />
+          <img src={Icon} alt="Logo" className="icon" />
         </div>
       </div>
     );
