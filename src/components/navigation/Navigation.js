@@ -33,7 +33,7 @@ class Navigation extends Component {
             <p>11</p>
           </div>
           <div className="channels">
-            {chats.map((chat) => (
+            {chats.map(chat => (
               <Link to={"/" + chat.chatId}>
                 <div className="channels-href">
                   <p>{"#" + chat.chatId}</p>

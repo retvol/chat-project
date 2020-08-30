@@ -7,10 +7,10 @@ const profileReducer = (state = initialState, action) => {
   switch (action.type) {
     case "SET_FRIENDS":
       return {
-        ...state,
         isReady: true,
         items: action.payload,
       };
+
 
     default:
       return state;

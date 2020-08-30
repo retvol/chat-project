@@ -3,8 +3,8 @@ import "./main.scss";
 import Chat from "../chat/Chat";
 import { connect } from "react-redux";
 import { addMessage } from "../../actions/actionCreate";
-import Header from "../header/Header";
 import MessageInput from "../messageInput/MessageInput";
+import Header from "../header/Header";
 
 const ENTER_BTN = "Enter";
 
@@ -29,7 +29,7 @@ class MainContainer extends Component {
     const { message } = this.state;
     if (key === ENTER_BTN) {
       const { addMessage, chatId } = this.props;
-      addMessage(chatId, new Date().getTime(), message);
+      addMessage(chatId,  new Date().toLocaleString(), message);
       this.clearMessage();
     }
   };
@@ -57,8 +57,8 @@ class MainContainer extends Component {
   }
 }
 
-const mapStateToProps = (store) => ({
-  chats: store.chatState,
+const mapStateToProps = ({chatState}) => ({
+  chats: chatState,
 });
 
 const mapDispatchToProps = {

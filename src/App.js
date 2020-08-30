@@ -8,13 +8,20 @@ import axios from "axios";
 import "./App.css";
 import MainContainer from "./components/main/MainContainer";
 import EmptyMain from "./components/main/EmptyMain";
+import {addMessage, setChannels} from "./actions/actionCreate";
 
 class App extends Component {
+
   componentDidMount() {
-    const { setFriends } = this.props;
+    const { setFriends, setChannels } = this.props;
+
     axios.get("friends.json").then(({ data }) => {
       setFriends(data);
     });
+    axios.get("channels.json").then(({ data }) => {
+      setChannels(data);
+    });
+    console.log(setChannels);
   }
 
   render() {
@@ -48,6 +55,8 @@ const mapStateToProps = (store) => ({
 
 const mapDispatchToProps = {
   setFriends,
+  addMessage,
+  setChannels,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);

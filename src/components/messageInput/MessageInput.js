@@ -7,6 +7,7 @@ class MessageInput extends Component {
 
     return (
       <div className="footer">
+
         <input
           type="text"
           className="footer-input"

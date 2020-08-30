@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./chat.scss";
-import Message from "../messageContainer/MessageContainer";
+import Message from "../message/Message";
 
 class Chat extends Component {
   render() {
