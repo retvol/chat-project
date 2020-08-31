@@ -1,8 +1,8 @@
-.scroll {
+.navigation {
   width: 280px;
   background: linear-gradient(to top, #212223, #535354);
 
-  .scroll-list {
+  .navigation-items {
     margin-right: 25px;
     margin-left: 27px;
 
@@ -69,7 +69,7 @@
       }
     }
 
-    .chaneles-number {
+    .channels-number {
       display: flex;
       margin-top: 30.5px;
       text-transform: uppercase;

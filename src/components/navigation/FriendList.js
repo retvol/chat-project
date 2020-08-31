@@ -7,8 +7,8 @@ class FriendList extends Component {
     const { prof } = this.props;
     return (
       <div className="friends-list-items">
-        <img src={FriendsOnline} alt="Logo" className="friends-online" />
-        <img src={prof.image} className="friends-photo" />
+        <img src={FriendsOnline} alt="" className="friends-online" />
+        <img src={prof.image} alt="" className="friends-photo" />
         <p>{prof.author}</p>
       </div>
     );

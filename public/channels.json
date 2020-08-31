@@ -2,5 +2,9 @@
   {
     "chatId": "bali",
     "messageList": []
+  },
+  {
+    "chatId": "general",
+    "messageList": []
   }
 ]

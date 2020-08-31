@@ -7,13 +7,11 @@ import Shape from "../../pictures/shape.svg";
 import People from "../../pictures/people.svg";
 
 class Header extends Component {
-
   render() {
-
     return (
       <div className="navbar">
         <div className="navbar-left">
-          <h4 className="channel">#general</h4>
+          <h4 className="channel-name">#general</h4>
           <img src={Star} alt="Logo" className="star" />
         </div>
         <div className="navbar-right">

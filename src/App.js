@@ -8,10 +8,9 @@ import axios from "axios";
 import "./App.css";
 import MainContainer from "./components/main/MainContainer";
 import EmptyMain from "./components/main/EmptyMain";
-import {addMessage, setChannels} from "./actions/actionCreate";
+import { addMessage, setChannels } from "./actions/actionCreate";
 
 class App extends Component {
-
   componentDidMount() {
     const { setFriends, setChannels } = this.props;
 
@@ -21,12 +20,13 @@ class App extends Component {
     axios.get("channels.json").then(({ data }) => {
       setChannels(data);
     });
-    console.log(setChannels);
+    axios.get("http://localhost:3000/chat").then((result) => {
+      console.log(result);
+    });
   }
 
   render() {
     const { profile, isReady, chats } = this.props;
-    console.log(profile);
 
     return (
       <div className="App">
@@ -37,6 +37,7 @@ class App extends Component {
             <Route
               exact
               path={"/" + chat.chatId}
+              key={chat.chatId}
               render={() => <MainContainer chatId={chat.chatId} />}
             />
           ))}

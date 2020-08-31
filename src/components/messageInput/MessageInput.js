@@ -6,8 +6,7 @@ class MessageInput extends Component {
     const { onKeyPress, onChange, value } = this.props;
 
     return (
-      <div className="footer">
-
+      <div className="message-input">
         <input
           type="text"
           className="footer-input"
