@@ -1,10 +1,10 @@
 [
   {
-    "chatId": "bali",
+    "id": "bali",
     "messageList": []
   },
   {
-    "chatId": "general",
+    "id": "general",
     "messageList": []
   }
 ]

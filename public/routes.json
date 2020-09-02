@@ -1,0 +1,19 @@
+{
+  "chat": [
+    {
+      "chatId": "bali",
+      "id": "1",
+      "text": "Hello  "
+    },
+    {
+      "chatId": "bali",
+      "id": "2",
+      "text": " from "
+    },
+    {
+      "chatId": "bali",
+      "id": "3",
+      "text": "  json"
+    }
+  ]
+}

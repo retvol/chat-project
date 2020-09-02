@@ -29,7 +29,7 @@ class MainContainer extends Component {
     const { message } = this.state;
     if (key === ENTER_BTN) {
       const { addMessage, chatId } = this.props;
-      addMessage(chatId,  new Date().toLocaleString(), message);
+      addMessage(chatId, new Date().toLocaleString(), message);
       this.clearMessage();
     }
   };
@@ -41,12 +41,16 @@ class MainContainer extends Component {
   };
 
   render() {
-    const { message } = this.state;
-
+    const { message, account, isReadyAccount } = this.state;
+    console.log("test" + " " + account);
     return (
       <div className="main">
         <Header />
-        <Chat messageList={this.getMessageList()} />
+        <Chat
+          messageList={this.getMessageList()}
+          account={account}
+          isReadyAccount={isReadyAccount}
+        />
         <MessageInput
           onKeyPress={this.sendMessage}
           onChange={this.onChangeInput}
@@ -57,7 +61,7 @@ class MainContainer extends Component {
   }
 }
 
-const mapStateToProps = ({chatState}) => ({
+const mapStateToProps = ({ chatState }) => ({
   chats: chatState,
 });
 

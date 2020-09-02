@@ -7,7 +7,9 @@ import Shape from "../../pictures/shape.svg";
 import People from "../../pictures/people.svg";
 
 class Header extends Component {
+
   render() {
+
     return (
       <div className="navbar">
         <div className="navbar-left">

@@ -5,12 +5,16 @@ import MessageAuthor from "./MessageAuthor";
 
 class Message extends Component {
   render() {
-    const { text, id } = this.props;
+    const { text, id, account, isReadyAccount } = this.props;
 
     return (
       <div className="chat-massages">
         <Time time={id} />
-        <MessageAuthor text={text} />
+        <MessageAuthor
+          text={text}
+          account={account}
+          isReadyAccount={isReadyAccount}
+        />
       </div>
     );
   }
