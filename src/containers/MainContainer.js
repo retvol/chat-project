@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import "./main.scss";
-import Chat from "../chat/Chat";
+import "../components/main/main.scss";
+import Chat from "../components/chat/Chat";
 import { connect } from "react-redux";
-import { addMessage } from "../../actions/actionCreate";
-import MessageInput from "../messageInput/MessageInput";
-import Header from "../header/Header";
+import { addMessage } from ".././actions/actionCreate";
+import MessageInput from "../components/messageInput/MessageInput";
+import Header from "../components/header/Header";
 
 const ENTER_BTN = "Enter";
 
@@ -41,16 +41,12 @@ class MainContainer extends Component {
   };
 
   render() {
-    const { message, account, isReadyAccount } = this.state;
-    console.log("test" + " " + account);
+    const { message } = this.state;
+
     return (
       <div className="main">
         <Header />
-        <Chat
-          messageList={this.getMessageList()}
-          account={account}
-          isReadyAccount={isReadyAccount}
-        />
+        <Chat messageList={this.getMessageList()} />
         <MessageInput
           onKeyPress={this.sendMessage}
           onChange={this.onChangeInput}

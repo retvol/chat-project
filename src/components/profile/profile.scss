@@ -2,6 +2,7 @@
   width: 201px;
   background: #cfd2d7;
   mix-blend-mode: normal;
+  position: relative;
 
   .avatar {
     height: 200px;
@@ -118,14 +119,15 @@
   }
 
   .profile-arrow {
-    margin-top: 230px;
-    margin-left: 160px;
     button {
+      position: absolute;
       height: 18px;
       width: 10px;
       background: #cfd2d7;
       border: none;
       outline: none;
+      top: 754px;
+      left: 160px;
     }
     img {
       margin-right: 10px;

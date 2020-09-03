@@ -10,6 +10,7 @@ import ProfileProff from "./ProfileProff";
 class Profile extends Component {
   render() {
     const { account, isReadyAccount } = this.props;
+
     return (
       <div className="profile">
         {!isReadyAccount

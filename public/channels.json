@@ -1,10 +1,46 @@
 [
   {
+    "id": "general",
+    "messageList": []
+  },
+  {
+    "id": "support",
+    "messageList": []
+  },
+  {
+    "id": "marketing",
+    "messageList": []
+  },
+  {
+    "id": "thailand",
+    "messageList": []
+  },
+  {
     "id": "bali",
     "messageList": []
   },
   {
-    "id": "general",
+    "id": "poland",
+    "messageList": []
+  },
+  {
+    "id": "australia",
+    "messageList": []
+  },
+  {
+    "id": "jobs",
+    "messageList": []
+  },
+  {
+    "id": "startups",
+    "messageList": []
+  },
+  {
+    "id": "italy",
+    "messageList": []
+  },
+  {
+    "id": "freelance",
     "messageList": []
   }
 ]

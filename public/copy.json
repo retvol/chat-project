@@ -1,79 +1,64 @@
 {
   "chat": [
     {
-      "chatId": "bali",
+      "chatId": "general",
       "id": "01.09.2020, 23:22:57",
       "text": "Hello  "
     },
     {
-      "chatId": "bali",
-      "id": "01.09.2020, 23:23:10",
-      "text": " from "
-    },
-    {
-      "chatId": "bali",
-      "id": "01.09.2020, 23:23:15",
-      "text": "  json"
-    },
-    {
-      "chatId": "general",
+      "chatId": "support",
       "id": "01.09.2020, 23:23:50",
       "text": "Hi!"
     },
     {
-      "id": "01.09.2020, 23:25:37",
-      "chatId": "general",
-      "text": "hiiii"
+      "chatId": "marketing",
+      "id": "01.09.2020, 23:23:55",
+      "text": "Hi!"
     },
     {
-      "id": "01.09.2020, 23:25:55",
-      "chatId": "general",
-      "text": "how are you"
+      "chatId": "thailand",
+      "id": "01.09.2020, 23:23:51",
+      "text": "Hi!"
     },
     {
-      "id": "01.09.2020, 23:26:46",
-      "chatId": "general",
-      "text": "dfghjk"
-    },
-    {
-      "id": "01.09.2020, 23:27:57",
-      "chatId": "general",
-      "text": "okay"
-    },
-    {
-      "id": "01.09.2020, 23:28:02",
-      "chatId": "general",
-      "text": "okaaay"
-    },
-    {
-      "id": "01.09.2020, 23:28:05",
-      "chatId": "general",
-      "text": " bnm,."
-    },
-    {
-      "id": "01.09.2020, 23:28:09",
-      "chatId": "general",
-      "text": "'/njjnnj"
-    },
-    {
-      "id": "01.09.2020, 23:28:15",
       "chatId": "bali",
-      "text": "hooow"
+      "id": "01.09.2020, 23:23:22",
+      "text": "Hi!"
     },
     {
-      "id": "02.09.2020, 16:21:29",
-      "chatId": "bali",
-      "text": "gkjdsf;gkljsd"
+      "chatId": "poland",
+      "id": "01.09.2020, 23:23:07",
+      "text": "Hi!"
     },
     {
-      "id": "02.09.2020, 16:21:34",
-      "chatId": "general",
-      "text": "ggggg"
+      "chatId": "australia",
+      "id": "01.09.2020, 23:23:28",
+      "text": "Hi!"
     },
     {
-      "id": "02.09.2020, 17:39:27",
-      "chatId": "bali",
-      "text": "sadASD"
+      "chatId": "jobs",
+      "id": "01.09.2020, 23:23:35",
+      "text": "Hi!"
+    },
+    {
+      "chatId": "startups",
+      "id": "01.09.2020, 23:23:33",
+      "text": "Hi!"
+    },
+    {
+      "chatId": "italy",
+      "id": "01.09.2020, 23:23:42",
+      "text": "Hi!"
+    },
+    {
+      "chatId": "freelance",
+      "id": "01.09.2020, 23:23:41",
+      "text": "Hi!"
+    },
+    {
+      "id": "03.09.2020, 13:25:11",
+      "chatId": "support",
+      "text": "fsadfsd"
     }
   ]
 }

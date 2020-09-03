@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./chat.scss";
 import Message from "../message/Message";
+import { connect } from "react-redux";
+import { setAccount } from "../../actions/setAccount";
 
 class Chat extends Component {
   render() {
@@ -23,5 +25,12 @@ class Chat extends Component {
     );
   }
 }
+const mapStateToProps = (store) => ({
+  account: store.accountState.account,
+  isReadyAccount: store.accountState.isReady,
+});
 
-export default Chat;
+const mapDispatchToProps = {
+  setAccount,
+};
+export default connect(mapStateToProps, mapDispatchToProps)(Chat);

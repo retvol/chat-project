@@ -1,15 +1,15 @@
 import React, { Component } from "react";
-import Navigation from "./components/navigation/Navigation";
-import Profile from "./components/profile/Profile";
+import Navigation from "../components/navigation/Navigation";
+import Profile from "../components/profile/Profile";
 import { connect } from "react-redux";
-import { setFriends } from "./actions/setFriends";
+import { setFriends } from "../actions/setFriends";
 import { Route, Switch } from "react-router-dom";
 
-import "./App.css";
-import MainContainer from "./components/main/MainContainer";
-import EmptyMain from "./components/main/EmptyMain";
-import { addMessage, setChannels } from "./actions/actionCreate";
-import { setAccount } from "./actions/setAccount";
+import "../App.css";
+import MainContainer from "./MainContainer";
+import EmptyMain from "../components/main/EmptyMain";
+import { addMessage, setChannels } from "../actions/actionCreate";
+import { setAccount } from "../actions/setAccount";
 
 class App extends Component {
   componentDidMount() {
@@ -32,17 +32,10 @@ class App extends Component {
     return (
       <div className="App">
         <Navigation profile={profile} isReady={isReady} chats={chats} />
-        <Switch
-          setAccount={setAccount}
-          account={account}
-          isReadyAccount={isReadyAccount}
-        >
+        <Switch>
           {<Route exact path="/" render={() => <EmptyMain />} />}
           {chats.map((chat) => (
             <Route
-              setAccount={setAccount}
-              account={account}
-              isReadyAccount={isReadyAccount}
               exact
               path={"/" + chat.chatId}
               key={chat.chatId}
