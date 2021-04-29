@@ -1,8 +1,27 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Проект Чат
+Технологии которые использовал:
+Html, css, scss
+JS(ES6)
+React.js 
+redux
+react-rouret-dom
+thunk
+axuos
+json-server
+logger
 
-In the project directory, you can run:
+чтобы запустить проект 
+Помимо npm start 
+Нужно запустить несколько хостов json-server
+Команды для терминала 
+npx json-server --watch -p 3005 public/friends.json
+npx json-server --watch -p 3004 public/account.json
+npx json-server --watch -p 3001 public/copy.json
+
+
+
 
 ### `npm start`
 
