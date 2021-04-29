@@ -7,15 +7,15 @@
 
 ## Технологии, которые использовал<br /> 
 
-1)Html, css, scss<br />
-2)JS(ES6)<br />
-3)React.js <br />
-4)redux<br />
-5)react-rouret-dom<br />
-6)thunk<br />
-7)axios<br />
-8)json-server<br />
-9)logger<br />
+1) Html, css, scss<br />
+2) JS(ES6)<br />
+3) React.js <br />
+4) redux<br />
+5) react-rouret-dom<br />
+6) thunk<br />
+7) axios<br />
+8) json-server<br />
+9) logger<br />
 <br />
 ## Чтобы запустить проект <br />
 Помимо npm start <br />
