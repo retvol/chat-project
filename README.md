@@ -17,10 +17,14 @@
 8) json-server<br />
 9) logger<br />
 <br />
+
 ## Чтобы запустить проект <br />
+
 Помимо npm start <br />
 Нужно запустить несколько хостов json-server<br />
+
 ## Команды для терминала <br />
+
 npx json-server --watch -p 3005 public/friends.json<br />
 npx json-server --watch -p 3004 public/account.json<br />
 npx json-server --watch -p 3001 public/copy.json<br />
