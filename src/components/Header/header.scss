@@ -1,11 +1,11 @@
-.Navbar {
+.navbar {
   margin-top: 31.5px;
   display: flex;
   height: 49.5px;
   border-bottom: 0.5px solid gray;
   align-items: center;
   justify-content: space-between;
-  .Navbar-left {
+  .navbar-left {
     display: flex;
     align-items: center;
     height: 49.5px;
@@ -25,17 +25,17 @@
     }
   }
 
-  .Navbar-right {
+  .navbar-right {
     display: flex;
     width: 428px;
     height: 49.5px;
-    .Navbar-right-input {
+    .navbar-right-input {
       width: 254px;
       height: 33px;
       border: 0.5px solid rgba(0, 0, 0, 0.24);
       box-sizing: border-box;
       border-radius: 5px;
-      background-image: url(../../Picters/lupa.svg);
+      background-image: url(../../pictures/lupa.svg);
       background-repeat: no-repeat;
       background-position-y: 8px;
       background-position-x: 220px;
@@ -45,38 +45,38 @@
       padding-left: 17px;
     }
 
-    .Lupa {
+    .lupa {
       position: absolute;
       left: 1330px;
       top: 50px;
     }
 
-    .Kol {
+    .kol {
       height: 15px;
       width: 15px;
       margin-left: 24px;
       margin-top: 8.8px;
     }
 
-    .Icon {
+    .icon {
       height: 16.5px;
       margin-left: 21px;
       margin-top: 8px;
     }
 
-    .Shape {
+    .shape {
       height: 5.5px;
       width: 5.5px;
       margin-top: 8px;
     }
 
-    .People {
+    .people {
       height: 15px;
       width: 11px;
       margin-top: 9px;
     }
 
-    .Number {
+    .number {
       font-size: 14;
       margin-bottom: 0;
       margin-top: 10px;

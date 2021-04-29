@@ -1,66 +1,40 @@
-export const addGeneralChat = (id, text, isCompleted) => ({
-  type: "ADD_GENERAL_CHAT",
-  id,
-  text,
-  isCompleted,
+import axios from "axios";
+
+// export const setChannels = (channels) => ({
+//     type: "SET_CHANNELS",
+//     payload: channels,
+// });
+
+export const setChannels = () => {
+    return (dispatch) => {
+        axios.get("http://localhost:3004/chat")
+            .then((response) => {
+                dispatch(setChannelsSuccess(response.data
+                    // {
+                    //     chatId: response.data.id,
+                    //     id: response.data.msgId,
+                    //     text: response.data.text
+                    // }
+                ))
+            })
+    }
+};
+
+export const addMessage = (chatId, msgId, text) => {
+    return (dispatch) => {
+        axios.post(`http://localhost:3004/chat`, {id: msgId, chatId, text})
+            .then(response => {
+                dispatch(addMessageSuccess(response.data))
+            })
+    }
+};
+
+export const addMessageSuccess = (payload) => ({
+    type: "ADD_MESSAGE",
+    ...payload,
 });
-export const addSupportChat = (id, text, isCompleted) => ({
-  type: "ADD_SUPPORT_CHAT",
-  id,
-  text,
-  isCompleted,
-});
-export const addMarketingChat = (id, text, isCompleted) => ({
-  type: "ADD_MARKETING_CHAT",
-  id,
-  text,
-  isCompleted,
-});
-export const addThailandChat = (id, text, isCompleted) => ({
-  type: "ADD_THAILAND_CHAT",
-  id,
-  text,
-  isCompleted,
-});
-export const addBaliChat = (id, text, isCompleted) => ({
-  type: "ADD_BALI_CHAT",
-  id,
-  text,
-  isCompleted,
-});
-export const addPolandChat = (id, text, isCompleted) => ({
-  type: "ADD_POLAND_CHAT",
-  id,
-  text,
-  isCompleted,
-});
-export const addAustreliaChat = (id, text, isCompleted) => ({
-  type: "ADD_AUSTRELIA_CHAT",
-  id,
-  text,
-  isCompleted,
-});
-export const addJobsChat = (id, text, isCompleted) => ({
-  type: "ADD_JOBS_CHAT",
-  id,
-  text,
-  isCompleted,
-});
-export const addStartupsChat = (id, text, isCompleted) => ({
-  type: "ADD_STARTUPS_CHAT",
-  id,
-  text,
-  isCompleted,
-});
-export const addItalyChat = (id, text, isCompleted) => ({
-  type: "ADD_ITALY_CHAT",
-  id,
-  text,
-  isCompleted,
-});
-export const addFreelanceChat = (id, text, isCompleted) => ({
-  type: "ADD_FREELANCE_CHAT",
-  id,
-  text,
-  isCompleted,
+
+export const setChannelsSuccess = (payload) => ({
+    type: "SET_CHANNELS",
+    payload,
 });

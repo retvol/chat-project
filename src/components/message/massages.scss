@@ -1,0 +1,61 @@
+.messages {
+  position: relative;
+  display: flex;
+  background: white;
+  width: 869px;
+  margin: 13px auto 0px auto;
+  .photo {
+    height: 33px;
+    width: 33px;
+  }
+  .message {
+    margin-left: 13px;
+    position: relative;
+  }
+}
+
+.name {
+  position: relative;
+  display: flex;
+  height: 15px;
+  width: 128px;
+  background: white;
+  p {
+    font-size: 12px;
+    margin-right: 8px;
+    margin-top: 0;
+    color: #8d8d8d;
+  }
+}
+
+.text {
+  position: relative;
+  width: 821px;
+  background: white;
+  margin-top: 3px;
+  p {
+    font-size: 13px;
+    margin: 0;
+  }
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  width: 869px;
+  background: white;
+  height: 18px;
+  margin: 0 auto;
+  p {
+    font-size: 13px;
+    width: 134px;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: #8d8d8d;
+  }
+  .line {
+    height: 1px;
+    width: 350px;
+    background: #eaeaea;
+  }
+}

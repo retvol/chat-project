@@ -1,0 +1,52 @@
+.message-input {
+  height: 71px;
+  border-top: 1px solid #a4a4a4;
+  border-bottom: 1px solid #a4a4a4;
+  position: relative;
+
+  input {
+    width: 714px;
+    height: 69px;
+    border: none;
+    outline: none;
+    padding-left: 97px;
+    padding-right: 100px;
+    color: black;
+  }
+
+  .over {
+    position: absolute;
+    height: 22px;
+    width: 14px;
+    background: url(../../pictures/Over.svg);
+    left: 25px;
+    border: none;
+    background-repeat: no-repeat;
+    margin-top: 26px;
+    outline: none;
+  }
+
+  .smile {
+    position: absolute;
+    height: 20px;
+    width: 23px;
+    background: url(../../pictures/Smile.svg);
+    right: 25px;
+    border: none;
+    background-repeat: no-repeat;
+    margin-top: 26px;
+    outline: none;
+  }
+
+  .micro {
+    position: absolute;
+    height: 21px;
+    width: 16px;
+    background: url(../../pictures/Micro.svg);
+    left: 59px;
+    border: none;
+    background-repeat: no-repeat;
+    margin-top: 26px;
+    outline: none;
+  }
+}

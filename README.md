@@ -1,8 +1,36 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Проект Чат<br />
+## Функционал<br />
+1) Разделение чата на несколько каналов. Каналы приходят с json-server<br />
+2) Оправка сообщений в чат: Сообщения отправляются на сервер при помищи thunk и сихроняются в json файле. <br />
+3) Так же есть блоки с личными данными аккаунта и списком друзей, которые вытягиваются с json-server <br />
+<br />
 
-## Available Scripts
+## Технологии, которые использовал<br /> 
 
-In the project directory, you can run:
+1) Html, css, scss<br />
+2) JS(ES6)<br />
+3) React.js <br />
+4) redux<br />
+5) react-rouret-dom<br />
+6) thunk<br />
+7) axios<br />
+8) json-server<br />
+9) logger<br />
+<br />
+
+## Чтобы запустить проект <br />
+
+Помимо npm start <br />
+Нужно запустить несколько хостов json-server<br />
+
+## Команды для терминала <br />
+
+npx json-server --watch -p 3005 public/friends.json<br />
+npx json-server --watch -p 3004 public/account.json<br />
+npx json-server --watch -p 3001 public/copy.json<br />
+
+
+
 
 ### `npm start`
 
