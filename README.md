@@ -1,24 +1,24 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Проект Чат
-Технологии которые использовал:
-Html, css, scss
-JS(ES6)
-React.js 
-redux
-react-rouret-dom
-thunk
-axuos
-json-server
-logger
-
-чтобы запустить проект 
-Помимо npm start 
-Нужно запустить несколько хостов json-server
-Команды для терминала 
-npx json-server --watch -p 3005 public/friends.json
-npx json-server --watch -p 3004 public/account.json
-npx json-server --watch -p 3001 public/copy.json
+Проект Чат<br />
+Технологии которые использовал:<br />
+Html, css, scss<br />
+JS(ES6)<br />
+React.js <br />
+redux<br />
+react-rouret-dom<br />
+thunk<br />
+axuos<br />
+json-server<br />
+logger<br />
+<br />
+чтобы запустить проект <br />
+Помимо npm start <br />
+Нужно запустить несколько хостов json-server<br />
+Команды для терминала <br />
+npx json-server --watch -p 3005 public/friends.json<br />
+npx json-server --watch -p 3004 public/account.json<br />
+npx json-server --watch -p 3001 public/copy.json<br />
 
 
 
